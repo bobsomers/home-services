@@ -7,3 +7,6 @@ version: "3.8"
 
   admin:
     # TODO
+  
+  cloudflare:
+    # TODO
