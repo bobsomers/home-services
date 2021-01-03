@@ -1,12 +1,16 @@
 version: "3.8"
+
+services:
   recursor:
+    image: bobsomers/powerdns-recursor:v1
+    ports:
+      - "12345:53/udp"
+
+  #authoritative:
     # TODO
 
-  authoritative:
+  #admin:
     # TODO
 
-  admin:
-    # TODO
-  
   cloudflare:
-    # TODO
+    image: bobsomers/cloudflare-doh:v1
