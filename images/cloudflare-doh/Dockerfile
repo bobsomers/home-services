@@ -17,4 +17,5 @@ RUN sudo -u build makepkg --syncdeps --install --noconfirm
 
 ENTRYPOINT ["/usr/bin/cloudflared", "proxy-dns", "--address", "0.0.0.0", "--port", "5300"]
 
+EXPOSE 5300
 EXPOSE 5300/udp
